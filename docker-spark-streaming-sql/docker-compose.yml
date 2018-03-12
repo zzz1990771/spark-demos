@@ -17,9 +17,7 @@ services:
     command: bash
     ports:
       - "4040:4040"
-    volumes:
-      - ./build:/build
-    working_dir: /build
+    working_dir: /
     depends_on:
       - zookeeper
       - kafka
